@@ -1,3 +1,14 @@
 spring:
   application:
     name: current-conversion-factor-data-service
+
+server:
+  port: 8040
+  
+eureka:
+  client:
+    serviceUrl:
+#      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://eureka-service:8761/eureka/
+  instance:
+    preferIpAddress: true 

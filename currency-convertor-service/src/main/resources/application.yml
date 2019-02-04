@@ -3,9 +3,12 @@ spring:
     name: currency-convertor-service
 
 server:
-  port: 8040
-
+  port: 8050
+  
 eureka:
   client:
-    fetchRegistry: true
-  
+    serviceUrl:
+#      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://eureka-service:8761/eureka/
+  instance:
+    preferIpAddress: true 
