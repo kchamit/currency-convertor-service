@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: currency-convertor-service
+
+server:
+  port: 8040
+
+eureka:
+  client:
+    fetchRegistry: true
+  
