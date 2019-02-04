@@ -1,4 +1,4 @@
-package com.curr.data;
+package com.curr.service;
 
 public class ConversionFactor {
 	private String currencyCode;
